@@ -1,0 +1,753 @@
+@import url('https:fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+:root {
+    /* Gerais */
+    --textShadow: 1px 1px 4px #00000046;
+    --genericText: #535353;
+    /* Menu Navegação / Header(Menu) */
+    --navMenuColor: #121317;
+    --navItemColor: #fff;
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --textShadowCarrosel: 1px 1px 4px #00000046;
+    --baseSiteColor: #BB2020;
+    --baseBorderColor: 1px solid #BB2020;
+    /* Form */
+    --bgForm: #fff;
+    --btnEntrar2: white;
+    /* Menu de Transportes(Rotas) */
+    --roteTitle: #fff;
+    --quotationLink: #FFEB4D;
+    --quotationLink2: #d6d6d6;
+    --roteTitle2: #333333;
+    --roteSubtitle: #d6d6d6;
+    /* Links Transportes(Rotas) */
+    --btnRotes2: white;
+    /* Contact Footer */
+    --bgContactFooter: #d6d6d6;
+    --btnContactColor: #d6d6d6;
+    /* Footer */
+    --bgFooter: #121317;
+    --bgFooter2: #121317;
+    --bgIconeColor: #121317;
+}
+
+/* Configurações de Estilo Scroll*/
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Configurações Gerais */
+
+.body {
+    margin-top: 40px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.genericText {
+    text-align: justify;
+    font-weight: 400;
+    font-size: clamp(16px, 23px, 26px);
+    color: var(--genericText);
+    padding: 0px;
+}
+
+h1 {
+    font-size: clamp(1rem, 32vw, 3rem);
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    color: var(--baseSiteColor);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(10, 10, 10);
+}
+
+h4 {
+    color: white;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+    color: white;
+    --bs-breadcrumb-divider: '>';
+}
+
+.breadcrumb>.active {
+    color: white;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: var(--baseSiteColor);
+    transition: all 1s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* Menu Contato Hide */
+
+.menuContact-hide {
+    transform: translate(0px, -38px) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#topBar {
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.topbarSolid {
+    background-color: var(--navMenuColor) !important;
+    transition: all 1s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+.voltarTopo-hide {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fim das Configurações Gerais */
+
+/* Estilo Menu de Contatos */
+
+.contactLink {
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.bg-menuContatos {
+    background-color: var(--baseSiteColor);
+}
+
+.menuTopoContatos {
+    height: 40px;
+    margin: 0;
+    padding-top: 8px;
+    z-index: 1000;
+}
+
+.menuTopoContatos a i {
+    font-size: 16px;
+}
+
+.menuContatoPhone {
+    font-weight: 400;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.menuContatoWhats {
+    font-weight: 400;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+/* FIM do Menu de Contatos */
+
+/* Estilo Barra Navegação/Topo */
+
+.bg-navTopo {
+    background: linear-gradient(#121317, #00000000);
+    z-index: 10;
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;    
+}
+
+.navHomeText {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--fontMontserrat);
+    color: var(--baseSiteColor);
+}
+
+.navHomeText:hover {
+    color: grey;
+}
+
+.navItemText {
+    font-size: 14px;
+    font-family: var(--fontMontserrat);
+    color: var(--navItemColor);
+}
+
+.navItemText:hover {
+    color: grey;
+}
+
+#navbarTop .pt-sm-5 {
+    padding-top: 30px;
+}
+
+/* Fim da Barra Navegação/Topo*/
+
+/* Estilo Carrosel de Imagens */
+
+.bg-parallax {
+    background: url(img/caminhao3.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    max-height: 600px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.bg-parallax img {
+    background-size: cover;
+    box-shadow: 1px 1px 4px #00000059;
+}
+
+.bg-parallax2 {
+    background: url(img/contact1.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.bg-parallax2 img {
+    background-size: cover;
+    box-shadow: 1px 1px 4px #00000059;
+}
+
+.bg-parallax3 {
+    background: url(img/galpao.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.bg-parallax4 {
+    background: url(img/who-we-are1.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+/* Fim do Parallax*/
+
+/* Estilo Formulario */
+
+.bg-Form {
+    background-color: var(--bgForm);
+    margin-top: -50px;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px 10px;
+    margin-bottom: 50px;
+    ;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.7rem .7em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+.btnForm {
+    background-color: var(--baseSiteColor);
+    border: 1px solid var(--baseSiteColor);
+    color: white;
+    font-weight: bold;
+}
+
+.btnForm:hover {
+    background-color: transparent;
+    color: var(--baseSiteColor);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* Fim do Form */
+
+/* Inicio da Seção de Transportadora(Rotas) */
+
+.roteTitle {
+    color: var(--roteTitle);
+    font-size: clamp(1rem, 32vw, 3rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: -2px 1px 9px #00000080;
+}
+
+.roteTitle h1 {
+    font-size: clamp(1rem, 32vw, 3rem);
+}
+
+.roteTitle h2 {
+    font-size: clamp(1rem, 26vw, 3rem);
+}
+
+.rotaSubtitle {
+    font-weight: 500;
+    font-size: clamp(16px, 24px, 32px);
+    text-shadow: 1px 1px 1px #00000080;
+    color: var(--roteSubtitle);
+}
+
+.quotationLink {
+    color: var(--quotationLink);
+    font-size: clamp(16px, 26px, 32px);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quotationLink:hover {
+    color: var(--quotationLink2);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* FIM da Seção de Transportadora(Rotas) */
+
+#rotas {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.rotasTransporte {
+    margin-top: 80px;
+}
+
+.rotasTransporte>.row {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    cursor: grab;
+    position: relative;
+}
+
+.rotasTransporte>.row>.col-lg-3, .col-md-4, .col-sm-6 {
+    display: inline-block;
+}
+
+/* Decorations */
+
+.rotasTransporte .col-lg-3, .col-md-4, .col-sm-6 {
+    color: #fff;
+    font-size: 48px;
+    padding-bottom: 20px;
+    padding-top: 18px;
+}
+
+.btnRotes {
+    background-color: var(--baseSiteColor);
+    border: 1px solid var(--menuContatosColor);
+    color: white;
+    height: 100px;
+    align-items: center;
+}
+
+.btnRotesText {
+    font-size: clamp(12px, 18px, 24px);
+    font-weight: 500;
+}
+
+.btnRotes:hover {
+    background-color: var(--btnRotes2);
+    border: 1px solid var(--baseSiteColor);
+    color: #0c0c0c;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* Seção Mega Cargas */
+
+.transMegaCargas {
+    display: block;
+    margin-top: 150px;
+}
+
+/* Seção Footer Contact */
+
+#contatos {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.bg-contact {
+    background-color: var(--bgContactFooter);
+}
+
+.btnContact {
+    background-color: var(--baseSiteColor);
+    display: block;
+    color: var(--btnContactColor);
+    border: var(--baseBorderColor);
+    font-weight: 700;
+}
+
+.btnContact:hover {
+    background-color: transparent;
+    color: var(--baseSiteColor);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* Seção Serviços */
+
+.hide {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+#services {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+@media only screen and (min-width: 801px) {
+    .servicesBox1 {
+        height: 500px;
+        width: 43%;
+        background: white;
+        z-index: 2;
+        margin-left: auto;
+        box-shadow: 20px 0px 10px -15px #00000043;
+    }
+    .servicesBox2 img {
+        margin: auto;
+        height: 400px;
+        max-width: 100%;
+        margin-left: -50px;
+        margin-top: 30px;
+        z-index: 0;
+        border-radius: 15px;
+        border-top-right-radius: 0 !important;
+    }
+}
+
+.servicesBox1 h2 {
+    font-weight: 700;
+    color: var(--baseSiteColor);
+}
+
+.servicesBox1 h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .imgMobileMargin {
+        margin-top: 135px;
+    }
+    .servicesBox2 img {
+        margin: auto;
+        height: 400px;
+        max-width: 100%;
+        margin-top: -150px;
+        z-index: 0;
+    }
+}
+
+/* Seção Footer */
+
+.footerInfo {
+    padding-right: 40px;
+    margin: 0px;
+}
+
+.footerInfo p, a {
+    font-size: 16px;
+}
+
+.footerInfo ul li a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.footerInfo ul li a:hover {
+    color: #25282b;
+}
+
+.bg-footer {
+    background-color: var(--bgFooter);
+    height: auto;
+    width: auto;
+}
+
+.bg-footer2 {
+    border-top: 1px solid #3b3b3b;
+    background-color: var(--bgFooter2);
+}
+
+.underline-footer {
+    content: '';
+    border-bottom: 2px solid var(--baseSiteColor);
+    width: 170px;
+    display: block;
+    margin-top: 5px;
+}
+
+.social-icon {
+    color: white;
+}
+
+.social-icon:hover {
+    color: var(--baseSiteColor);
+}
+
+/* Pagina de Contato */
+
+.contactUs-box {
+    padding: 40px 30px;
+}
+
+.contactUs-box h3 {
+    font-weight: 700;
+}
+
+.contactType {
+    background-color: transparent;
+    height: auto;
+}
+
+.contactType {
+    text-align: justify;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.contactType i {
+    color: var(--baseSiteColor);
+}
+
+/* Formulario */
+
+.contactTitle {
+    color: var(--baseSiteColor);
+}
+
+.contactParallaxText {
+    display: block;
+    margin-top: 200px;
+}
+
+.formBoxText {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/* -- Pagina de Cotação -- /*
+
+/* Cotação */
+
+.quotationBox {
+    padding: 20px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 1px 1px 23px -5px #00000059;
+    ;
+}
+
+.isRequired::after {
+    content: '*';
+    color: red;
+}
+
+/* Botão de Duvida */
+
+.btnDuvida {
+    background-color: var(--baseSiteColor);
+    border: 1px solid var(--baseSiteColor);
+    color: white;
+    font-weight: bold;
+}
+
+.btnDuvida:hover {
+    background-color: transparent;
+    color: var(--baseSiteColor);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+}
+
+/* Seção Quem Somos */
+
+@media only screen and (max-width: 800px) {
+    .whoBox1 {
+        height: 500px;
+        background: white;
+        margin-left: auto;
+        border-radius: 15px;
+        border-top-right-radius: 0 !important;
+        margin-bottom: 50px;
+    }
+    .whoBox2 img {
+        margin: auto;
+        height: 400px;
+        max-width: 100%;
+        border-radius: 15px;
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .whoBox1 {
+        height: 500px;
+        width: 45%;
+        background: white;
+        margin-left: auto;
+        border-radius: 15px;
+        border-top-right-radius: 0 !important;
+    }
+    .whoBox2 img {
+        margin: auto;
+        height: 400px;
+        max-width: 100%;
+        border-radius: 15px 0;
+    }
+}
+
+/* Voltar para o Topo */
+
+.voltarTopo {
+    background-color: var(--bgFooter);
+    width: 50px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    transform: translate(0px, 0px);
+    transition: all 0.6s ease-out;
+}
+
+.sideSlide{
+    transform: translate(-60px, 0px);
+    transition: all 0.6s ease-out;
+}
+
+a.voltarTopo {
+    text-decoration: none;
+}
+
+a.voltarTopo:hover {
+    color: var(--baseSiteColor);
+}
+
+/* Seção de Animação */
+
+.gooey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: contrast(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+}
+
+.gooey .dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+}
+
+.gooey .dots span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+@-moz-keyframes dots {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes dots {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@-o-keyframes dots {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes dots {
+    50% {
+        transform: translateY(-15px);
+    }
+}
