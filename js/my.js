@@ -7,7 +7,8 @@ $(window).scroll(function (e) {
 
     console.log(scroll)
 
-    if (scroll != 0) { // Se o scroll não for 0, adiciona a classe para esconder
+    // Se o scroll não for 0, adiciona a classe para esconder
+    if (scroll != 0) { 
         $('#topBar').addClass("menuContact-hide");
         isHide = false
     } else { // Se o scroll for 0, remove a classe para esconder
@@ -15,17 +16,18 @@ $(window).scroll(function (e) {
         isHide = true
     }
 
-    if (isHide) {
+    if (isHide) { // Se estiver escondido, deixa a barra transparente
         $('#navbarTop').removeClass("topbarSolid")
-    } else if (!isHide) {
+    } else if (!isHide) { // Se não estiver escondido, deixa a barra solida
         $('#navbarTop').addClass("topbarSolid")
     }
 
-    if (scroll >= 200) {
+    // Quando o scroll for maior que 200, mostra a seção de serviço
+    if (scroll >= 200) { 
         $('#services').removeClass("hide");
-
     }
 
+    // Quando o scroll for maior que 550, mostra o botão para voltar para o topo
     if (scroll >= 550) {
         $('#rotas').removeClass("hide");
         $('.voltarTopo').removeClass("sideSlide")
@@ -33,16 +35,19 @@ $(window).scroll(function (e) {
         $('.voltarTopo').addClass("sideSlide")
     }
 
+    // Quando o scroll for 750, mostra o a seção de contatos da pagina de index
     if (scroll >= 750) {
         $('#contatos').removeClass("hide");
     }
 
+    // Apenas um exemplo de teste
     // var person = {
     //     name: 'hbt',
     //     age: 21
     // };
     // person['name']
 
+    // Ao clicar no botão de collapse, deixa a barra de navegação solida
     $('#colapsoBtn').click(function () {
         $('#navbarTop')['addClass']("topbarSolid");
     })
@@ -72,6 +77,7 @@ $('#mystuff').change(function () {
     }
 });
 
+// Transição de tela de loading
 $(window).on("load", function () {
     $(".gooey").fadeOut("slow");
 });
