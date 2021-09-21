@@ -195,7 +195,7 @@ h4 {
     background: linear-gradient(#121317, #00000000);
     z-index: 10;
     transform: translate(0px, 0px);
-    transition: all 0.3s ease-in-out;    
+    transition: all 0.3s ease-in-out;
 }
 
 .navHomeText {
@@ -676,12 +676,11 @@ h4 {
     align-items: center;
     justify-content: center;
     color: white;
-
     transform: translate(0px, 0px);
     transition: all 0.6s ease-out;
 }
 
-.sideSlide{
+.sideSlide {
     transform: translate(-60px, 0px);
     transition: all 0.6s ease-out;
 }

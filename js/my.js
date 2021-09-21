@@ -43,26 +43,9 @@ $(window).scroll(function (e) {
     // };
     // person['name']
 
-    // var isScrolled = true;
-    // if (isScrolled) {
-
-    // } else {
-
-    // }
-    // return isScrolled ? 'asdad' : 'asdad'
-
     $('#colapsoBtn').click(function () {
         $('#navbarTop')['addClass']("topbarSolid");
     })
-
-    // if (scroll === 0) {
-    //     $('#colapsoBtn').click(function () {
-    //         $('#navbarTop').addClass("topbarSolid");
-    //         console.log("Clicou")
-    //     })
-    // } else{
-        
-    // }
 });
 
 (function ($) {
