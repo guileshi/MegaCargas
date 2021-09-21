@@ -3,9 +3,7 @@ $(window).scroll(function (e) {
 
     // add/remove class to navbar when scrolling to hide/show
     var scroll = $(window).scrollTop(); // Variavel para pegar o scroll
-    var isHide = true;
-
-    console.log(scroll)
+    var isHide = true; // Deixar a barra transparente ao entrar no site
 
     // Se o scroll não for 0, adiciona a classe para esconder
     if (scroll != 0) { 
