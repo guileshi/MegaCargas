@@ -630,25 +630,60 @@ h4 {
 
 /* Seção Quem Somos */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 0px){
     .whoBox1 {
         height: 500px;
         background: white;
         margin-left: auto;
         border-radius: 15px;
         border-top-right-radius: 0 !important;
-        margin-bottom: 50px;
+        margin-bottom: 200px;
     }
     .whoBox2 img {
         margin: auto;
-        height: 400px;
+        height: 200px;
         max-width: 100%;
         border-radius: 15px;
         margin-top: -80px;
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 351px) {
+    .whoBox1 {
+        height: 500px;
+        background: white;
+        margin-left: auto;
+        border-radius: 15px;
+        border-top-right-radius: 0 !important;
+        margin-bottom: 65px;
+    }
+    .whoBox2 img {
+        margin: auto;
+        height: 200px;
+        max-width: 100%;
+        border-radius: 15px;
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (min-width: 539px) {
+    .whoBox1 {
+        height: 300px;
+        background: white;
+        margin-left: auto;
+        border-radius: 15px;
+        border-top-right-radius: 0 !important;
+    }
+    .whoBox2 img {
+        margin: auto;
+        height: 300px;
+        max-width: 100%;
+        border-radius: 15px;
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
     .whoBox1 {
         height: 500px;
         width: 45%;
