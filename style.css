@@ -74,17 +74,17 @@
 .genericText {
     text-align: justify;
     font-weight: 400;
-    font-size: clamp(16px, 23px, 26px);
+    font-size: clamp(1em, 23px, 2em);
     color: var(--genericText);
     padding: 0px;
 }
 
 h1 {
-    font-size: clamp(1rem, 32vw, 3rem);
+    font-size: clamp(1em, 32vw, 2em);
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 2em;
     margin-top: 10px;
     color: var(--baseSiteColor);
     font-weight: 700;
@@ -170,7 +170,7 @@ h4 {
 }
 
 .menuTopoContatos a i {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .menuContatoPhone {
@@ -199,7 +199,7 @@ h4 {
 }
 
 .navHomeText {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     font-family: var(--fontMontserrat);
     color: var(--baseSiteColor);
