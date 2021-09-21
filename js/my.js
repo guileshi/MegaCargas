@@ -52,7 +52,7 @@ $(window).scroll(function (e) {
     // return isScrolled ? 'asdad' : 'asdad'
 
     $('#colapsoBtn').click(function () {
-        $('#navbarTop')[scroll !== 0 ? 'removeClass' : 'addClass']("topbarSolid");
+        $('#navbarTop')['addClass']("topbarSolid");
     })
 
     // if (scroll === 0) {

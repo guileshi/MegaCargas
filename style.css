@@ -455,7 +455,7 @@ h4 {
     transition: opacity .5s linear;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
     .servicesBox1 {
         height: 500px;
         width: 43%;
@@ -486,7 +486,7 @@ h4 {
     margin-top: 15px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 999px) {
     .imgMobileMargin {
         margin-top: 135px;
     }
