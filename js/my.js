@@ -62,19 +62,6 @@ $(window).scroll(function (e) {
     })
 })(jQuery);
 
-/* Mudar conteudo de um formulario */
-$('.mystuff_hide').hide(); /* Começa Escondido */
-$('#mystuff').change(function () {
-
-    if ($(this).val() == "opt2") {
-        $('.mystuff_hide').show(); /* Mostrar */
-        $('#valorNota, #peso, #quantidade').attr('required', true);
-    } else {
-        $('.mystuff_hide').hide(); /* Esconder */
-        $('#valorNota, #peso, #quantidade').removeAttr('required');
-    }
-});
-
 // Transição de tela de loading
 $(window).on("load", function () {
     $(".gooey").fadeOut("slow");
