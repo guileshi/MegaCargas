@@ -544,6 +544,16 @@ h4 {
     color: var(--baseSiteColor);
 }
 
+.footerLink{
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footerLink:hover{
+    color: var(--genericText);
+    text-decoration: none;
+}
+
 /* Pagina de Contato */
 
 .contactUs-box {
